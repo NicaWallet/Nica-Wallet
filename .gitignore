@@ -1,0 +1,21 @@
+# Directorios
+/node_modules
+
+# Archivos
+*.log
+*.pot
+*.out
+
+# Archivos generados por IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de compilación
+/dist/
+/build/
+
+# Dependiendo de tu entorno, puede que quieras ignorar archivos de caché
+*.DS_Store
+Thumbs.db
