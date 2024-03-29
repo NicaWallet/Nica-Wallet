@@ -4,43 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión</title>
-
+    <title>Inicio de sesión</title>
     <link rel="stylesheet" href="/public/styles.css">
     <link rel="stylesheet" href="/src/css/LogIn.css">
-
 </head>
 
 <body>
-
-    <header class="header">
+    <div class="contenedor">
         <a href="/public/index.html">
-            <img src="/public/assets/img/Logo/Logo_NicaWallet.png" alt="Logo_NicaWallet" class="logo">
+            <img src="/public/assets/img/Logo/NicaWallet-Logo.png" alt="Imagen de fondo" class="imgSesion">
         </a>
-
-        <ul class="navbar">
-            <li href=""><a href="/public/index.html">Inicio</a></li>
-            <li href="">Acerca de nosotros</li>
-            <li href="">Productos</li>
-            <li href="">Iniciar Sesión</li>
-        </ul>
-    </header>
-
-    <div class="login-container">
-        <h2>Iniciar Sesión</h2>
-        <form action="#" method="POST" class="login-form">
-            <div class="form-group">
-                <label for="username">Usuario:</label>
-                <input type="text" id="username" name="username" required>
+        <div class="formulario">
+            <h1>¡Inicia Sesión!</h1>
+            <div class="palabra">
+                <b>Para continuar a Nica Wallet</b>
             </div>
-            <div class="form-group">
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Ingresar</button>
-        </form>
+            <form action="#">
+                <label for="correo">Correo electrónico:</label>
+                <div class="icon-input">
+                    <img src="/public/assets/img/icono-mail.png" alt="imagen de mail" class="icons">
+                    <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico">
+                </div>
+                <label for="contrasena">Contraseña:</label>
+                <div class="icon-input">
+                    <img src="/public/assets/img/icono-contra.png" alt="imagen de contrasena" class="icons">
+                <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña">
+                </div>
+                <div class="button"><button type="submit">Iniciar sesión</button></div>
+            </form>
+            <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+        <p>¿No tienes una cuenta? <a href="#">Crea una cuenta</a></p>
     </div>
-
 </body>
 
 </html>
