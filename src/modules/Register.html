@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="/public/styles.css" />
+    <link rel="stylesheet" href="/src/css/LogIn.css" />
+    <link rel="stylesheet" href="/src/css/Register.css" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <a href="/public/index.html">
+        <img
+          src="/public/assets/img/Logo/NicaWallet-Logo.png"
+          alt="Imagen de fondo"
+          class="imgSesion"
+        />
+      </a>
+      <div class="formulario">
+        <h1>¡Registrate!</h1>
+        <div class="palabra">
+          <b>Para continuar a Nica Wallet</b>
+        </div>
+        <form action="#">
+          <label for="usuario">Usuario:</label>
+          <div class="icon-input">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40px"
+              height="40px"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="12" cy="6" r="4" fill="currentColor" />
+              <path
+                fill="currentColor"
+                d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5"
+                opacity="0.5"
+              />
+            </svg>
+            <input
+              type="text"
+              id="usuario"
+              name="usuario"
+              placeholder="Ingrese su nombre de usuario"
+            />
+          </div>
+          <label for="correo">Correo electrónico:</label>
+          <div class="icon-input">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 36 36"
+            >
+              <path
+                fill="currentColor"
+                d="M32.33 6a2 2 0 0 0-.41 0h-28a2 2 0 0 0-.53.08l14.45 14.39Z"
+                class="clr-i-solid clr-i-solid-path-1"
+              />
+              <path
+                fill="currentColor"
+                d="m33.81 7.39l-14.56 14.5a2 2 0 0 1-2.82 0L2 7.5a2 2 0 0 0-.07.5v20a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2V8a2 2 0 0 0-.12-.61M5.3 28H3.91v-1.43l7.27-7.21l1.41 1.41Zm26.61 0h-1.4l-7.29-7.23l1.41-1.41l7.27 7.21Z"
+                class="clr-i-solid clr-i-solid-path-2"
+              />
+              <path fill="none" d="M0 0h36v36H0z" />
+            </svg>
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              placeholder="Ingrese su correo electrónico"
+            />
+          </div>
+          <label for="contrasena">Contraseña:</label>
+          <div class="icon-input">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40px"
+              height="40px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M12 17a2 2 0 0 0 2-2a2 2 0 0 0-2-2a2 2 0 0 0-2 2a2 2 0 0 0 2 2m6-9a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h1V6a5 5 0 0 1 5-5a5 5 0 0 1 5 5v2zm-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3"
+              />
+            </svg>
+            <input
+              type="password"
+              id="contrasena"
+              name="contrasena"
+              placeholder="Ingrese su contraseña"
+            />
+          </div>
+          <label for="confirmar_contrasena">Confirma tu contraseña:</label>
+          <div class="icon-input">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40px"
+              height="40px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M12 17a2 2 0 0 0 2-2a2 2 0 0 0-2-2a2 2 0 0 0-2 2a2 2 0 0 0 2 2m6-9a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h1V6a5 5 0 0 1 5-5a5 5 0 0 1 5 5v2zm-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3"
+              />
+            </svg>
+            <input
+              type="password"
+              id="confirmar_contrasena"
+              name="confirmar_contrasena"
+              placeholder="Confirme su contraseña"
+            />
+          </div>
+
+          <div class="button"><button id="miBoton">Registrate</button></div>
+        </form>
+      </div>
+    </div>
+
+    <script src="/src/js/alert.js" />
+  </body>
+</html>
