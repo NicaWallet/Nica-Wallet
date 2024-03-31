@@ -111,3 +111,15 @@ p {
   text-align: center;
   margin-top: 10px;
 }
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
