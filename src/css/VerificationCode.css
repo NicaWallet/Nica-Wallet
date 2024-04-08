@@ -1,0 +1,19 @@
+.icon-inputForgotPasswrod {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+
+.number-input{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.guion{
+    margin: auto;
+}

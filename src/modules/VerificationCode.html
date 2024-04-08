@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForgotPassword</title>
+    <!-- Estilos generales de la web -->
+    <link rel="stylesheet" href="/public/styles.css">
+    <!-- Estilos heredados de Login -->
+    <link rel="stylesheet" href="/src/css/LogIn.css">
+    <!-- Estilos unicos de la vista ForgotPassword -->
+    <link rel="stylesheet" href="/src/css/ForgotPassword.css">
+    <!-- Estilos unicos de la vista VerificationCode -->
+    <link rel="stylesheet" href="/src/css/VerificationCode.css">
+
+</head>
+
+<body>
+    <div class="contenedor">
+        <a href="/public/index.html" class="aForgetPassword">
+            <img src="/public/assets/img/Logo/image.png" alt="Imagen de fondo" class="imgreset">
+        </a>
+        <div class="formularioForgotPassword">
+            <h2 class="h2ForgotPassword">
+                Verificacion requerida
+            </h2>
+            <div class="palabraForgotPassword">
+                <b class="bForgotPassword">                    
+                    Ingrsa el codigo enviado al correo:
+                    <br><br>
+                    Ema*******@*****.com
+                </b>
+            </div>
+            
+            <form action="#">                
+                <div class="icon-inputForgotPasswrod">
+                    <input class="number-input" type="text" id="n1" name="N1" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
+                    <input class="number-input" type="text" id="n1" name="N1" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
+                    <input class="number-input" type="text" id="n1" name="N1" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
+                    <p class="guion">-</p>
+                    <input class="number-input" type="text" id="n1" name="N1" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
+                    <input class="number-input" type="text" id="n1" name="N1" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
+                    <input class="number-input" type="text" id="n1" name="N1" maxlength="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
+                </div>
+                <button href="ForgotPassword.html" type="submit" class="buttonForgotPassword" id="miBoton">
+                    Enviar instrucciones
+                </button>
+            </form>
+
+            <a href="LogIn.html" class="VolverForgotPassword">
+                <img src="/public/assets/img/flecha.png" class="flechaForgotPassword">
+                Volver a inicio de sesión
+            </a>
+        </div>
+    </div>
+
+    <script src="/src/js/validation.js"></script>
+    
+</body>
+
+</html>
