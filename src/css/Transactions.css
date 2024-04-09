@@ -1,0 +1,76 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.modulo-transacciones {
+  margin: 20px auto;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilos para filtros */
+.filtros {
+  margin-bottom: 20px;
+}
+
+.filtros label {
+  margin-right: 10px;
+}
+
+.filtros input[type="date"],
+.filtros select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.filtros button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filtros button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para la tabla */
+#tabla-transacciones {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#tabla-transacciones th,
+#tabla-transacciones td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#tabla-transacciones th {
+  background-color: #f2f2f2;
+}
+
+#tabla-transacciones tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#tabla-transacciones tbody tr:hover {
+  background-color: #ddd;
+}
