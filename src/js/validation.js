@@ -89,3 +89,65 @@ function validaNumericos(event) {
     }
     return false;        
 }
+
+function verificarPasswords() {
+ 
+    // Ontenemos los valores de los campos de contraseñas 
+    pass1 = document.getElementById('pass1');
+    pass2 = document.getElementById('pass2');
+    
+    if(pass1.value != "" && pass1.value == pass2.value) {
+        if(!checkPassword(pass1.value)) {
+                  // Si las constraseñas no coinciden mostramos un mensaje 
+                document.getElementById("error1").classList.add("mostrar");
+                document.getElementById("error1").style.textAlign = "center";
+                document.getElementById("error1").style.marginTop = "10px";
+                document.getElementById("error1").style.color = "silver";
+          return false;
+        }
+    }
+       
+    // Verificamos si las constraseñas no coinciden 
+    if (pass1.value != pass2.value) {
+        
+        // Si las constraseñas no coinciden mostramos un mensaje 
+        document.getElementById("error").classList.add("mostrar");
+        document.getElementById("error").style.textAlign = "center";
+        document.getElementById("error").style.marginTop = "10px";
+        document.getElementById("error").style.color = "silver";
+            
+    } else {
+ 
+        // Si las contraseñas coinciden ocultamos el mensaje de error
+        document.getElementById("error").classList.remove("mostrar");
+
+        // Mostramos un mensaje mencionando que las Contraseñas coinciden 
+        document.getElementById("ok").classList.remove("ocultar");
+        document.getElementById("ok").style.textAlign = "center";
+        document.getElementById("ok").style.marginTop = "10px";
+        document.getElementById("ok").style.color = "silver";
+        
+        
+
+        // Desabilitamos el botón de login 
+        document.getElementById("mybutton").disabled = true;
+ 
+        // Refrescamos la página (Simulación de envío del formulario) 
+        setTimeout(function() {
+            location.href ="login.html";
+
+        }, 3000);
+
+        return true;
+    }    
+    return true;
+}
+
+function checkPassword(valor){
+    var myregex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/; 
+   if(myregex.test(valor)){       
+       return true;        
+   }else{      
+       return false;        
+   }   
+ }
