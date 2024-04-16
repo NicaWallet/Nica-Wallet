@@ -37,6 +37,7 @@ nav.main-menu.expanded {
     /* -webkit-transform: translateZ(0) scale(1, 1); */
     z-index: 1000;
     flex-direction: column; /* Organiza el contenido en columnas */
+    display: inline-block;
     
 }
 
