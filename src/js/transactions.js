@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     const filtroFechaInicio = document.getElementById("fecha-inicio");
     const filtroFechaFin = document.getElementById("fecha-fin");
@@ -10,8 +11,18 @@ document.addEventListener("DOMContentLoaded", function() {
         const fechaFin = filtroFechaFin.value;
         const tipo = filtroTipo.value;
 
-        // Llamar a una función que obtenga las transacciones filtradas y las muestre en la tabla
-        mostrarTransaccionesFiltradas(fechaInicio, fechaFin, tipo);
+        // Validar que se ingresen valores para fecha de inicio, fecha de fin y tipo antes de filtrar
+        if (fechaInicio && fechaFin || tipo) {
+            mostrarTransaccionesFiltradas(fechaInicio, fechaFin, tipo);
+        } else {
+            // Mostrar mensaje de error en consola si falta alguno de los filtros
+            console.log("Por favor ingrese al menos uno de los filtros.");
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'Por favor ingrese un rango de fecha valido.'
+            });
+        }
     });
 
     function mostrarTransaccionesFiltradas(fechaInicio, fechaFin, tipo) {

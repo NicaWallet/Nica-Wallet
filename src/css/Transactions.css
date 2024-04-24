@@ -74,3 +74,13 @@ h2 {
 #tabla-transacciones tbody tr:hover {
   background-color: #ddd;
 }
+
+/* Estilos responsivos */
+@media only screen and (max-width: 768px) {
+  .main-menu {
+    width: 100px; /* Ajustar el ancho de la barra lateral para pantallas pequeñas */
+  }
+  .modulo-transacciones {
+    width: 90%; /* Ajustar el ancho del contenido principal para pantallas pequeñas */
+  }
+}
